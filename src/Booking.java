@@ -26,7 +26,7 @@ public class Booking {
 
         java.time.LocalTime openingTime = java.time.LocalTime.of(9,0);
         java.time.LocalTime closingTime = java.time.LocalTime.of(18,0);
-        if ( startTime.toLocalTime().isAfter(openingTime)||startTime.toLocalTime().isBefore(closingTime) )
+        if ( startTime.toLocalTime().isBefore(openingTime)||endTime.toLocalTime().isAfter(closingTime) )
             throw new  IllegalArgumentException("Booking must be between start and end time");
 
 
@@ -59,5 +59,18 @@ public class Booking {
 
     public BookingStatus getStatus() {
         return status;
+    }
+
+    public void setStatus(BookingStatus status) {
+        this.status = status;
+    }
+
+
+    public void setEndTime(LocalDateTime endTime) {
+        this.endTime = endTime;
+    }
+
+    public void setStartTime(LocalDateTime startTime) {
+        this.startTime = startTime;
     }
 }
