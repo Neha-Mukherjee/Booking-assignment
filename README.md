@@ -51,7 +51,7 @@ A console-based Java application that manages meeting-room reservations, prevent
 1. Open the project in IntelliJ IDEA or another Java IDE.
 2. Configure a Java 17 or later JDK.
 3. Compile the Java source files.
-4. Run `Main.java`.
+4. Run `src/Main.java`.
 
 From a terminal, assuming all source files are directly inside `src`:
 
