@@ -75,7 +75,7 @@ Operations:
 - BK105: Asha, R1, 09:30–10:00 — accepted.
 - BK106: Rahul, R1, 10:00–11:00 — accepted after BK101 is cancelled.
 
-## Expected Final Results
+## Final Results
 - Active bookings: BK103, BK104, BK105, BK106.
 - R1 booked time: 150 minutes.
 - R2 booked time: 60 minutes.
@@ -86,5 +86,3 @@ Operations:
 - BK102 is not stored.
 - BK103 remains ACTIVE at 11:00–12:00 after its rejected reschedule.
 
-## Testing
-See `TEST_CASES.md` for test inputs, expected results, and actual results.
